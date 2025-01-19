@@ -1,4 +1,4 @@
-public class DiscoDuro extends UnidadAlmacenamiento{
+public class DiscoDuro extends UnidadAlmacenamiento implements PermiteEscritura{
 	private static final String UNIDAD_MEMORIA = " GB";
 	private static final String UNIDAD_LECTURA_ESCRITURA = " MB/s";
 	private static final String UNIDAD_ROTACION = " RPM";

@@ -1,4 +1,4 @@
-public abstract class UnidadAlmacenamiento{
+public abstract class UnidadAlmacenamiento implements DiscoGiratorio{
 	protected int capacidad;
 	protected int velocidadLectura;
 	protected int velocidadEscritura;
@@ -14,9 +14,14 @@ public abstract class UnidadAlmacenamiento{
 	public boolean getPermiteEscritura(){
 		return permiteEscritura;
 	}
-	
+
 	public abstract void girarDisco();
-	public abstract void guardarDatos();
+	public void guardarDatos(){
+		if (permiteEscritura)
+			System.out.println("Guardando datos...");
+		else
+			System.out.println("No se pudo guardar los datos.");
+	}
 	public abstract void leerDatos();
 	public abstract String toString();
 }

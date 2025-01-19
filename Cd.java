@@ -1,4 +1,4 @@
-public class Cd extends UnidadAlmacenamiento{
+public class Cd extends UnidadAlmacenamiento implements PermiteEscritura{
 	private static final String UNIDAD_MEMORIA = " MB";
 	private static final String UNIDAD_LECTURA = " KB/s";
 	private static final String UNIDAD_ESCRITURA = "x";

@@ -11,10 +11,19 @@ public class Main{
 		DiscoDuro dsc = new DiscoDuro(500, 80, 60, 5400, 64);
 		probarFuncionamiento(dsc);
 
-		Cd soloLectura = new Cd(700, 150, 10);
-		probarFuncionamiento(soloLectura);
+		Cd cdLecturaEscritura = new Cd(700, 150, 10);
+		probarFuncionamiento(cdLecturaEscritura);
 
-		Cd lecturaEscritura = new Cd(700, 150);
-		probarFuncionamiento(lecturaEscritura);
+		Cd cdLectura = new Cd(700, 150);
+		probarFuncionamiento(cdLectura);
+
+		BluRay blrLecturaEscritura = new BluRay(25, 36, 6);
+		probarFuncionamiento(blrLecturaEscritura);
+
+		BluRay blrLectura= new BluRay(25, 36);
+		probarFuncionamiento(blrLectura);
+
+		Vinilo vnl = new Vinilo();
+		probarFuncionamiento(vnl);
 	}
 }
